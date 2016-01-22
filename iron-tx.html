@@ -1,0 +1,41 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-signals/iron-signals.html">
+<dom-module id="iron-tx">
+    <template>
+        <style>
+            :host{
+                display: block;
+            }
+        </style>
+
+        <iron-signals on-iron-signal-message="handleMessage"></iron-signals>
+        <div>
+
+            <button on-tap="passMsg">Send</button>
+
+            {{message}}
+        </div>
+
+
+    </template>
+    <script>
+        Polymer({
+            is:'iron-tx',
+            properties:{
+
+                /**
+                 * The align controls horizontal positioning left,middle,right. default = center
+                 */
+
+
+            },
+            passMsg:function(){
+                this.fire('iron-signal', {name: "message", data: { "message" : "Hi..I am Nuwan"}});
+            },
+            handleMessage:function(data){
+                this.message=data.detail.message;
+            }
+
+        });
+    </script>
+</dom-module>

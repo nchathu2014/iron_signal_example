@@ -1,0 +1,29 @@
+{
+  "name": "iron_signal_example",
+  "homepage": "https://github.com/nchathu2014/iron_signal_example",
+  "description": "This is a example of iron signal",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Polymer",
+    "iron-signal",
+    "inter",
+    "communication"
+  ],
+  "authors": [
+    "T.D.N.Chathuranga"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.2.3",
+    "iron-signals": "PolymerElements/iron-signals#~1.0.3"
+  }
+}
